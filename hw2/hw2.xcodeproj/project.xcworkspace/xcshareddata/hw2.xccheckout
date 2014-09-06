@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1C0B57FD-C1F7-4C6A-B9A9-660BB9425514</string>
+	<key>IDESourceControlProjectName</key>
+	<string>hw2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1C2F06B6CCBE4D917878985E57E43C0DEE910172</key>
+		<string>https://github.com/Neomor/MU110.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hw2/hw2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1C2F06B6CCBE4D917878985E57E43C0DEE910172</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Neomor/MU110.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1C2F06B6CCBE4D917878985E57E43C0DEE910172</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1C2F06B6CCBE4D917878985E57E43C0DEE910172</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MU110</string>
+		</dict>
+	</array>
+</dict>
+</plist>
