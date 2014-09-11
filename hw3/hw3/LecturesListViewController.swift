@@ -38,7 +38,7 @@ class LecturesListViewController: UITableViewController {
             let vc = segue.destinationViewController as LectureViewController
             if let indexPath = tableView.indexPathForSelectedRow() {
                 let cell = tableView.cellForRowAtIndexPath(indexPath)
-                vc.lectureDesc.text = cell?.textLabel?.text
+                vc.lecDesc = cell?.textLabel?.text
                 
             }
         }

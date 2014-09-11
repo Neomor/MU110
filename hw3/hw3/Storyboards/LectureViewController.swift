@@ -9,11 +9,13 @@
 import UIKit
 
 class LectureViewController: UIViewController {
-
+    
+    var lecDesc: String?
     @IBOutlet weak var lectureDesc: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lectureDesc.text = lecDesc
 
     }
 
