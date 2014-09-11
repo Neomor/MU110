@@ -26,7 +26,7 @@ class LecturesListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("detail") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("lectureCell") as UITableViewCell
         
         cell.textLabel?.text = "Лекция № \(indexPath.row + 1)"
         
@@ -34,18 +34,15 @@ class LecturesListViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "detail" {
+        if segue.identifier == "segueDetail" {
             let vc = segue.destinationViewController as LectureViewController
             if let indexPath = tableView.indexPathForSelectedRow() {
-                if vc.lectureDesc != nil {
-                    vc.lectureDesc.text = "gdfgdfgdg"
-                }
+                let cell = tableView.cellForRowAtIndexPath(indexPath)
+                vc.lectureDesc.text = cell?.textLabel?.text
                 
             }
         }
         
-        
-
         
         
     }
