@@ -8,21 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LecturesListViewController: UITableViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // if (!user.isLogedIn) {
-        let loginController: UIViewController = UIStoryboard(name:
-            "Authentication", bundle: nil).instantiateInitialViewController() as
-        UIViewController
-        
-        
-        navigationController!.presentViewController(loginController, animated:
-            true, completion: nil)
-        
-        //}
+//        // if (!user.isLogedIn) {
+//        let loginController = UIStoryboard(name: "Authentication", bundle: nil).instantiateInitialViewController() as LoginViewController
+//        
+//        
+//        navigationController!.presentViewController(loginController, animated: true, completion: nil)
+//        
+//        //}
     }
 
     override func didReceiveMemoryWarning() {
