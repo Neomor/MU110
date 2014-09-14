@@ -10,11 +10,11 @@
 		B63C974B19BB835100877E6E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C974A19BB835100877E6E /* LoginViewController.swift */; };
 		B64BA94319BB6C4B00F653ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BA94219BB6C4B00F653ED /* AppDelegate.swift */; };
 		B64BA94519BB6C4B00F653ED /* LecturesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BA94419BB6C4B00F653ED /* LecturesListViewController.swift */; };
-		B64BA94819BB6C4B00F653ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64BA94619BB6C4B00F653ED /* Main.storyboard */; };
 		B64BA94A19BB6C4B00F653ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64BA94919BB6C4B00F653ED /* Images.xcassets */; };
 		B64BA95619BB6C4B00F653ED /* hw4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BA95519BB6C4B00F653ED /* hw4Tests.swift */; };
 		B64BA96019BB756D00F653ED /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64BA95F19BB756D00F653ED /* Authentication.storyboard */; };
 		B6730C3619C1919300C0D09B /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6730C3519C1919300C0D09B /* LectureViewController.swift */; };
+		B6A5B72919C5D8A100FFED9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A5B72819C5D8A100FFED9D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		B64BA93D19BB6C4B00F653ED /* hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64BA94119BB6C4B00F653ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64BA94219BB6C4B00F653ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B64BA94419BB6C4B00F653ED /* LecturesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesListViewController.swift; sourceTree = "<group>"; };
-		B64BA94719BB6C4B00F653ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B64BA94419BB6C4B00F653ED /* LecturesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LecturesListViewController.swift; path = Controllers/LecturesListViewController.swift; sourceTree = "<group>"; };
 		B64BA94919BB6C4B00F653ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B64BA94F19BB6C4B00F653ED /* hw4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hw4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64BA95419BB6C4B00F653ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64BA95519BB6C4B00F653ED /* hw4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw4Tests.swift; sourceTree = "<group>"; };
 		B64BA95F19BB756D00F653ED /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Authentication.storyboard; path = Storyboards/Authentication.storyboard; sourceTree = "<group>"; };
-		B6730C3519C1919300C0D09B /* LectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureViewController.swift; path = Storyboards/LectureViewController.swift; sourceTree = "<group>"; };
+		B6730C3519C1919300C0D09B /* LectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureViewController.swift; path = Controllers/LectureViewController.swift; sourceTree = "<group>"; };
+		B6A5B72819C5D8A100FFED9D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 		B64BA96119BB75B800F653ED /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				B64BA94619BB6C4B00F653ED /* Main.storyboard */,
+				B6A5B72819C5D8A100FFED9D /* Main.storyboard */,
 				B64BA95F19BB756D00F653ED /* Authentication.storyboard */,
 			);
 			name = Storyboards;
@@ -214,8 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A5B72919C5D8A100FFED9D /* Main.storyboard in Resources */,
 				B64BA96019BB756D00F653ED /* Authentication.storyboard in Resources */,
-				B64BA94819BB6C4B00F653ED /* Main.storyboard in Resources */,
 				B64BA94A19BB6C4B00F653ED /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,17 +258,6 @@
 			targetProxy = B64BA95019BB6C4B00F653ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B64BA94619BB6C4B00F653ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B64BA94719BB6C4B00F653ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B64BA95719BB6C4B00F653ED /* Debug */ = {
