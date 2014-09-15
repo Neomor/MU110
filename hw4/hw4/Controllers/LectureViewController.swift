@@ -10,12 +10,23 @@ import UIKit
 
 class LectureViewController: UIViewController {
 
-    var lecDesc: String?
+  
+    var lecture: Lecture?
+
+    @IBOutlet weak var lectureDate: UILabel!
+    @IBOutlet weak var lectureName: UILabel!
     @IBOutlet weak var lectureDesc: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        lectureDesc.text = lecDesc
+        if let lect = lecture {
+            lectureName.text = lect.name
+            lectureDate.text = lect.data
+            
+            lectureDesc.numberOfLines = 2
+            lectureDesc.text = lect.desc
+        }
+
 
     }
 

@@ -15,6 +15,8 @@
 		B64BA96019BB756D00F653ED /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64BA95F19BB756D00F653ED /* Authentication.storyboard */; };
 		B6730C3619C1919300C0D09B /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6730C3519C1919300C0D09B /* LectureViewController.swift */; };
 		B6A5B72919C5D8A100FFED9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A5B72819C5D8A100FFED9D /* Main.storyboard */; };
+		B6A5B73D19C5F61A00FFED9D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A5B73A19C5F5EF00FFED9D /* Alamofire.framework */; };
+		B6A5B74019C5FCF400FFED9D /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5B73F19C5FCF400FFED9D /* Lecture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B64BA93C19BB6C4B00F653ED;
 			remoteInfo = hw4;
+		};
+		B6A5B73919C5F5EF00FFED9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6A5B73419C5F5EE00FFED9D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		B6A5B73B19C5F5EF00FFED9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6A5B73419C5F5EE00FFED9D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +56,8 @@
 		B64BA95F19BB756D00F653ED /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Authentication.storyboard; path = Storyboards/Authentication.storyboard; sourceTree = "<group>"; };
 		B6730C3519C1919300C0D09B /* LectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureViewController.swift; path = Controllers/LectureViewController.swift; sourceTree = "<group>"; };
 		B6A5B72819C5D8A100FFED9D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		B6A5B73419C5F5EE00FFED9D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../libs/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		B6A5B73F19C5FCF400FFED9D /* Lecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lecture.swift; path = Models/Lecture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A5B73D19C5F61A00FFED9D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +95,7 @@
 				B64BA93F19BB6C4B00F653ED /* hw4 */,
 				B64BA95219BB6C4B00F653ED /* hw4Tests */,
 				B64BA93E19BB6C4B00F653ED /* Products */,
+				B6A5B73419C5F5EE00FFED9D /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B64BA94219BB6C4B00F653ED /* AppDelegate.swift */,
+				B6A5B73E19C5FC5F00FFED9D /* Models */,
 				B63C974C19BB841C00877E6E /* Controllers */,
 				B64BA96119BB75B800F653ED /* Storyboards */,
 				B64BA94919BB6C4B00F653ED /* Images.xcassets */,
@@ -132,6 +153,23 @@
 				B64BA95F19BB756D00F653ED /* Authentication.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6A5B73519C5F5EE00FFED9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5B73A19C5F5EF00FFED9D /* Alamofire.framework */,
+				B6A5B73C19C5F5EF00FFED9D /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6A5B73E19C5FC5F00FFED9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5B73F19C5FCF400FFED9D /* Lecture.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +239,12 @@
 			mainGroup = B64BA93419BB6C4B00F653ED;
 			productRefGroup = B64BA93E19BB6C4B00F653ED /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B6A5B73519C5F5EE00FFED9D /* Products */;
+					ProjectRef = B6A5B73419C5F5EE00FFED9D /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B64BA93C19BB6C4B00F653ED /* hw4 */,
@@ -208,6 +252,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B6A5B73A19C5F5EF00FFED9D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = B6A5B73919C5F5EF00FFED9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B6A5B73C19C5F5EF00FFED9D /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = B6A5B73B19C5F5EF00FFED9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B64BA93B19BB6C4B00F653ED /* Resources */ = {
@@ -238,6 +299,7 @@
 				B6730C3619C1919300C0D09B /* LectureViewController.swift in Sources */,
 				B64BA94519BB6C4B00F653ED /* LecturesListViewController.swift in Sources */,
 				B64BA94319BB6C4B00F653ED /* AppDelegate.swift in Sources */,
+				B6A5B74019C5FCF400FFED9D /* Lecture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = hw4/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,7 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = hw4/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
