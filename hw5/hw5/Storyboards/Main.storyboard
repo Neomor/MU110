@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="-805" y="294"/>
         </scene>
-        <!--Lectures List View Controller-->
+        <!--Список лекций-->
         <scene sceneID="P9p-CM-FwS">
             <objects>
                 <tableViewController id="W6i-pA-rhg" customClass="LecturesListViewController" customModule="hw5" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +58,14 @@
                             <outlet property="delegate" destination="W6i-pA-rhg" id="44M-OK-kDq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fGa-X0-e3h"/>
+                    <navigationItem key="navigationItem" title="Список лекций" id="fGa-X0-e3h">
+                        <barButtonItem key="backBarButtonItem" title="Вернуться" id="7or-gY-mcS"/>
+                        <barButtonItem key="leftBarButtonItem" title="Выйти" id="2AG-HN-r9z">
+                            <connections>
+                                <action selector="exitAction:" destination="W6i-pA-rhg" id="FYo-ig-qJS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkX-Ui-VKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

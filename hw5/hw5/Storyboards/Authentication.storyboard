@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="-1553" y="-1211"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Авторизация-->
         <scene sceneID="2lo-45-yHj">
             <objects>
                 <viewController id="qQb-xv-uiX" customClass="LoginViewController" customModule="hw5" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="y0G-uR-cI9"/>
+                    <navigationItem key="navigationItem" title="Авторизация" id="y0G-uR-cI9">
+                        <barButtonItem key="backBarButtonItem" title="Вернуться" id="CW5-JO-1rN"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stv-K0-qPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

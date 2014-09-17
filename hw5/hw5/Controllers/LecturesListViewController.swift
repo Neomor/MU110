@@ -17,6 +17,52 @@ class LecturesListViewController: UITableViewController {
         }
     }
     
+    // MARK: - UIViewController methods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadDataFromServer()
+        
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueDetail" {
+            let vc = segue.destinationViewController as LectureViewController
+            if let indexPath = tableView.indexPathForSelectedRow() {
+                
+                if let lects = self.lectures {
+                    let lect = lects[indexPath.row] as Lecture
+                    vc.lecture = lect
+                }
+                
+            }
+        }
+        
+    }
+    
+    
+    // MARK: - Internal Logic
+    
+    func checkUserForAuth() {
+        
+    }
+    @IBAction func exitAction(sender: UIBarButtonItem) {
+        showLoginController()
+    }
+    
+    func showLoginController() {
+        let loginController: UIViewController = UIStoryboard(name: "Authentication", bundle: nil).instantiateInitialViewController() as UIViewController
+        
+        navigationController!.presentViewController(loginController, animated: false, completion: nil)
+    }
+    
     func loadDataFromServer () {
         
         WeeklyAPI.sharedInstance.getAllLectures { (lecturesRes) -> () in
@@ -26,20 +72,10 @@ class LecturesListViewController: UITableViewController {
         }
         
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        loadDataFromServer()
-
-    }
     
-  
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
-    }
-
+    
+    // MARK: - UITableView Delegates
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let lects = self.lectures {
@@ -60,24 +96,6 @@ class LecturesListViewController: UITableViewController {
 
         return cell
     }
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "segueDetail" {
-            let vc = segue.destinationViewController as LectureViewController
-            if let indexPath = tableView.indexPathForSelectedRow() {
-                
-                if let lects = self.lectures {
-                    let lect = lects[indexPath.row] as Lecture
-                    vc.lecture = lect
-                }
-                
-            }
-        }
-
-
-
-    }
-
 
 
 

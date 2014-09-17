@@ -10,7 +10,7 @@ import Foundation
 
 class User: NSObject {
     
-    var login: String?
+    var name: String?
     var password: String?
     
 }

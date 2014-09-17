@@ -8,15 +8,11 @@
 
 import Foundation
 
-class Lecture {
+class Lecture: NSObject {
     var name: String?
     var data: String?
     var desc: String?
     var image: String?
     var video: String?
-
-    init() {
-
-    }
 
 }
