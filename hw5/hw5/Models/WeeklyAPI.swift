@@ -15,9 +15,9 @@ class WeeklyAPI: NSObject {
     
     class var sharedInstance: WeeklyAPI {
         
-    struct Static {
-        static var onceToken: dispatch_once_t = 0
-        static var instance: WeeklyAPI? = nil
+        struct Static {
+            static var onceToken: dispatch_once_t = 0
+            static var instance: WeeklyAPI? = nil
         }
         
         dispatch_once( &Static.onceToken, { () -> Void in
