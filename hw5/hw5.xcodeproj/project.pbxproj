@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B639C13F19C9CA8B00A60440 /* WeeklyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639C13E19C9CA8B00A60440 /* WeeklyAPI.swift */; };
+		B639C14319C9E2A500A60440 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639C14219C9E2A500A60440 /* RegistrationViewController.swift */; };
+		B639C14519C9E38800A60440 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639C14419C9E38800A60440 /* User.swift */; };
 		B63C974B19BB835100877E6E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C974A19BB835100877E6E /* LoginViewController.swift */; };
 		B64BA94319BB6C4B00F653ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BA94219BB6C4B00F653ED /* AppDelegate.swift */; };
 		B64BA94519BB6C4B00F653ED /* LecturesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BA94419BB6C4B00F653ED /* LecturesListViewController.swift */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B639C13E19C9CA8B00A60440 /* WeeklyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyAPI.swift; sourceTree = "<group>"; };
+		B639C14219C9E2A500A60440 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = Controllers/RegistrationViewController.swift; sourceTree = "<group>"; };
+		B639C14419C9E38800A60440 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		B63C974A19BB835100877E6E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		B64BA93D19BB6C4B00F653ED /* hw5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64BA94119BB6C4B00F653ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 				B64BA94419BB6C4B00F653ED /* LecturesListViewController.swift */,
 				B63C974A19BB835100877E6E /* LoginViewController.swift */,
 				B6730C3519C1919300C0D09B /* LectureViewController.swift */,
+				B639C14219C9E2A500A60440 /* RegistrationViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				B64BA94219BB6C4B00F653ED /* AppDelegate.swift */,
+				B639C13E19C9CA8B00A60440 /* WeeklyAPI.swift */,
 				B6A5B73E19C5FC5F00FFED9D /* Models */,
 				B63C974C19BB841C00877E6E /* Controllers */,
 				B64BA96119BB75B800F653ED /* Storyboards */,
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A5B73F19C5FCF400FFED9D /* Lecture.swift */,
+				B639C14419C9E38800A60440 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -296,8 +305,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63C974B19BB835100877E6E /* LoginViewController.swift in Sources */,
+				B639C13F19C9CA8B00A60440 /* WeeklyAPI.swift in Sources */,
 				B6730C3619C1919300C0D09B /* LectureViewController.swift in Sources */,
 				B64BA94519BB6C4B00F653ED /* LecturesListViewController.swift in Sources */,
+				B639C14519C9E38800A60440 /* User.swift in Sources */,
+				B639C14319C9E2A500A60440 /* RegistrationViewController.swift in Sources */,
 				B64BA94319BB6C4B00F653ED /* AppDelegate.swift in Sources */,
 				B6A5B74019C5FCF400FFED9D /* Lecture.swift in Sources */,
 			);
