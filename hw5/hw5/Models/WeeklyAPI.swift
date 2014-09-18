@@ -27,7 +27,7 @@ class WeeklyAPI: NSObject {
         return Static.instance!
     }
     
-    func getAllLectures (Result: (Array<Lecture>?) -> Void ) {
+    func getAllLectures (Result: (Array<Lecture>) -> Void ) {
         Alamofire.request(.GET, apiEndPoint)
             .responseJSON {(request, response, JSON, error) in JSON
                 

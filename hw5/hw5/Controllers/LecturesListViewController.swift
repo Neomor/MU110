@@ -10,11 +10,8 @@ import UIKit
 
 class LecturesListViewController: UITableViewController {
     
-    private var lectures: Array<Lecture>?{
-        didSet {
-            self.tableView.reloadData()
-        }
-    }
+    private var lectures: Array<Lecture> = []
+
     
     // MARK: - UIViewController methods
     
@@ -35,11 +32,7 @@ class LecturesListViewController: UITableViewController {
         if segue.identifier == "segueDetail" {
             let vc = segue.destinationViewController as LectureViewController
             if let indexPath = tableView.indexPathForSelectedRow() {
-                
-                if let lects = self.lectures {
-                    let lect = lects[indexPath.row] as Lecture
-                    vc.lecture = lect
-                }
+                vc.lecture = self.lectures[indexPath.row]
                 
             }
         }
@@ -67,6 +60,7 @@ class LecturesListViewController: UITableViewController {
         WeeklyAPI.sharedInstance.getAllLectures { (lecturesRes) -> () in
             
             self.lectures = lecturesRes
+            self.tableView.reloadData()
 
         }
         
@@ -77,22 +71,16 @@ class LecturesListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let lects = self.lectures {
-            return lects.count
-        }
+        return self.lectures.count
 
-        return 0
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("lectureCell") as UITableViewCell
         
-        if let lects = self.lectures {
-            let lect = lects[indexPath.row] as Lecture
-            cell.textLabel?.text = lect.name
-        }
-
+        cell.textLabel?.text = self.lectures[indexPath.row].name
+        
         return cell
     }
 
